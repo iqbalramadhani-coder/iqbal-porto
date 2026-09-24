@@ -26,7 +26,53 @@
         <a class="nav-link" href="#proyek">Proyek</a>
         <a class="nav-link" href="#kontak">Kontak</a>
       </div>
-      <a class="nav-cta" href="#kontak">Mari terhubung <span>↗</span></a>
+      <div class="nav-actions">
+        <a class="nav-cta" href="#kontak">Mari terhubung <span>↗</span></a>
+        <!-- Profil di Pojok Kanan Atas -->
+        <div class="nav-profile-container">
+          <button class="nav-profile-btn" id="profileDropdownBtn" aria-label="Menu profil Iqbal" aria-expanded="false">
+            <div class="nav-avatar-wrap">
+              <img src="profile.jpg" alt="Foto Profil Iqbal Ramadhani" class="nav-avatar">
+              <span class="status-indicator"></span>
+            </div>
+            <div class="nav-profile-info">
+              <span class="nav-profile-name">Iqbal</span>
+              <span class="nav-profile-tag">RPL</span>
+            </div>
+            <span class="nav-profile-chevron">▾</span>
+          </button>
+
+          <!-- Dropdown Profil Pojok Kanan -->
+          <div class="profile-dropdown" id="profileDropdown">
+            <div class="dropdown-header">
+              <img src="profile.jpg" alt="Iqbal Ramadhani" class="dropdown-avatar">
+              <div class="dropdown-user">
+                <h4>Iqbal Ramadhani</h4>
+                <p>Siswa RPL · Web Dev</p>
+                <span class="dropdown-school">SMK Telkom Lampung</span>
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-menu">
+              <a href="#beranda" class="dropdown-item">
+                <span class="item-icon">🏠</span> Beranda
+              </a>
+              <a href="#tentang" class="dropdown-item">
+                <span class="item-icon">👤</span> Tentang Profil
+              </a>
+              <a href="#proyek" class="dropdown-item">
+                <span class="item-icon">💻</span> Proyek Saya
+              </a>
+              <a href="#kontak" class="dropdown-item">
+                <span class="item-icon">✉️</span> Hubungi Saya
+              </a>
+            </div>
+            <div class="dropdown-footer">
+              <span class="dropdown-status-pill"><span class="pulse-dot"></span> Available to collaborate</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -41,26 +87,59 @@
           <a class="text-link" href="#tentang">Kenali saya <span>↗</span></a>
         </div>
       </div>
-      <div class="hero-art reveal reveal-delay" aria-label="Ilustrasi profil Tsabita">
+      <div class="hero-art reveal reveal-delay" aria-label="Profil Iqbal Ramadhani">
         <div class="art-orbit orbit-one"></div>
         <div class="art-orbit orbit-two"></div>
-        <div class="art-card">
-          <div class="art-card-top"><span class="window-dot pink"></span><span class="window-dot yellow"></span><span class="window-dot green"></span><span class="code-label">about-me.js</span></div>
-          <div class="code-block">
-            <p><span class="code-purple">const</span> <span class="code-blue">developer</span> = {</p>
-            <p class="indent"><span class="code-key">name:</span> <span class="code-green">'Tsabita'</span>,</p>
-            <p class="indent"><span class="code-key">role:</span> <span class="code-green">'Web Developer'</span>,</p>
-            <p class="indent"><span class="code-key">school:</span> <span class="code-green">'SMK Telkom Lampung'</span></p>
-            <p>};</p>
+        <div class="art-card hero-profile-card">
+          <div class="art-card-top">
+            <span class="window-dot pink"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+            <span class="code-label">iqbal-profile.js</span>
           </div>
-          <div class="art-card-footer"><span>● available to learn</span><span>RPL / 2025</span></div>
+
+          <div class="hero-profile-body">
+            <div class="hero-profile-photo-wrap">
+              <img src="profile.jpg" alt="Foto Iqbal Ramadhani" class="hero-profile-photo">
+              <span class="hero-profile-online-badge"><span class="pulse-dot"></span> Online</span>
+            </div>
+            <div class="hero-profile-meta">
+              <span class="hero-profile-badge">SMK Telkom Lampung</span>
+              <h3 class="hero-profile-title">Iqbal Ramadhani</h3>
+              <p class="hero-profile-sub">Rekayasa Perangkat Lunak · Web Dev</p>
+            </div>
+          </div>
+
+          <div class="hero-profile-stats">
+            <div class="stat-box">
+              <span class="stat-num">3+</span>
+              <span class="stat-desc">Proyek</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">RPL</span>
+              <span class="stat-desc">Jurusan</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">2025</span>
+              <span class="stat-desc">Angkatan</span>
+            </div>
+          </div>
+
+          <div class="hero-profile-code">
+            <p><span class="code-purple">const</span> <span class="code-blue">iqbal</span> = { <span class="code-key">status:</span> <span class="code-green">'Siap Belajar & Berkarya'</span> };</p>
+          </div>
+
+          <div class="art-card-footer">
+            <span>● SMK Telkom Lampung</span>
+            <span>RPL / Lampung</span>
+          </div>
         </div>
         <span class="floating-star star-one">✦</span>
         <span class="floating-star star-two">✦</span>
       </div>
     </section>
 
-    <div class="marquee-wrap" aria-label="Keahlian Tsabita">
+    <div class="marquee-wrap" aria-label="Keahlian Iqbal Ramadhani">
       <div class="marquee">
         <span>HTML</span><b>✦</b><span>CSS</span><b>✦</b><span>JAVASCRIPT</span><b>✦</b><span>WEB DEVELOPMENT</span><b>✦</b><span>REKAYASA PERANGKAT LUNAK</span><b>✦</b>
         <span>HTML</span><b>✦</b><span>CSS</span><b>✦</b><span>JAVASCRIPT</span><b>✦</b><span>WEB DEVELOPMENT</span><b>✦</b>
@@ -103,7 +182,7 @@
           </article>
           <article class="project-card project-card-peach reveal reveal-delay-2">
             <div class="project-top"><span class="project-number">03</span><span class="project-type">HTML · CSS · JS</span></div>
-            <div class="project-visual visual-portfolio"><span class="portfolio-t">T</span><span class="visual-label">MY<br><b>PORTFOLIO</b></span></div>
+            <div class="project-visual visual-portfolio"><span class="portfolio-t">I</span><span class="visual-label">MY<br><b>PORTFOLIO</b></span></div>
             <div class="project-info"><h3>Portofolio pribadi</h3><p>Website personal untuk memperkenalkan diri, proses belajar, dan karya sebagai siswa RPL.</p><a href="#beranda" class="project-link" aria-label="Lihat portofolio pribadi">Lihat detail ↗</a></div>
           </article>
         </div>

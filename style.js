@@ -39,3 +39,30 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+
+// Profil Dropdown (Pojok Kanan Atas)
+const profileBtn = document.getElementById("profileDropdownBtn");
+const profileDropdown = document.getElementById("profileDropdown");
+
+if (profileBtn && profileDropdown) {
+  profileBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = profileDropdown.classList.toggle("show");
+    profileBtn.setAttribute("aria-expanded", isOpen);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!profileDropdown.contains(e.target) && !profileBtn.contains(e.target)) {
+      profileDropdown.classList.remove("show");
+      profileBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  profileDropdown.querySelectorAll(".dropdown-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      profileDropdown.classList.remove("show");
+      profileBtn.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
